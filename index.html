@@ -2,126 +2,167 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Razón 101 💖</title>
+<title>Razón 101 🔥</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap');
 
 body{
   margin:0;
   background:
-    linear-gradient(rgba(255,240,235,0.9), rgba(255,220,220,0.9)),
-    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-  font-family:'Libre Baskerville', serif;
-  color:#4a2c2a;
+    linear-gradient(rgba(80,50,20,0.7), rgba(40,20,5,0.85)),
+    url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+  font-family:'Cormorant Garamond', serif;
 }
 
-.contenedor{
-  max-width:900px;
-  margin:80px auto;
-  background:#fff7f3;
-  border-radius:25px;
-  padding:70px 90px;
-  box-shadow:0 40px 80px rgba(90,30,40,0.35);
+.carta{
+  max-width:850px;
+  margin:90px auto;
+  background:
+    linear-gradient(rgba(255,244,230,0.96), rgba(245,225,200,0.96)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  padding:90px 80px;
   position:relative;
+  color:#4b2e1a;
+  box-shadow:
+    inset 0 0 120px rgba(80,40,10,0.6),
+    0 40px 90px rgba(0,0,0,0.6);
+  border-radius:12px;
+  clip-path: polygon(
+    3% 0%, 97% 2%, 100% 8%, 98% 96%,
+    94% 100%, 6% 98%, 0% 92%, 2% 6%
+  );
+}
+
+/* BORDES QUEMADOS */
+.carta::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at top left, rgba(120,60,20,0.6), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(120,60,20,0.6), transparent 40%);
+  mix-blend-mode:multiply;
+  pointer-events:none;
 }
 
 h1{
   text-align:center;
-  font-family:'Playfair Display', serif;
-  font-size:3.2em;
-  margin-bottom:5px;
+  font-size:3.4em;
+  margin-bottom:10px;
 }
 
 .sub{
   text-align:center;
   font-style:italic;
-  margin-bottom:50px;
-  color:#7a3e48;
+  margin-bottom:60px;
 }
 
 .texto{
-  font-size:1.1em;
-  line-height:1.9;
+  font-size:1.25em;
+  line-height:2;
   white-space:pre-line;
 }
 
-/* COLLAGE */
-.collage{
-  position:absolute;
-  top:120px;
-  left:-80px;
-  display:flex;
-  flex-direction:column;
+/* GALERIA ORDENADA */
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
   gap:18px;
+  margin:60px 0;
 }
 
-.collage.right{
-  left:auto;
-  right:-80px;
+.galeria img{
+  width:100%;
+  border-radius:8px;
+  box-shadow:0 12px 25px rgba(0,0,0,0.45);
+  transform:rotate(-1deg);
 }
 
-.collage img{
-  width:130px;
-  border-radius:14px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.25);
-  transform:rotate(-4deg);
-}
-
-.collage img:nth-child(even){
-  transform:rotate(4deg);
+.galeria img:nth-child(even){
+  transform:rotate(1deg);
 }
 
 @media(max-width:900px){
-  .collage{display:none;}
-  .contenedor{padding:40px;}
+  .galeria{grid-template-columns:repeat(2,1fr);}
+  .carta{padding:50px 30px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="contenedor">
+<div class="carta">
 
-  <div class="collage">
-    <img src="img2.jpeg">
-    <img src="img3.jpeg">
-    <img src="img4.jpeg">
-  </div>
+<h1>Razón 101</h1>
+<div class="sub">La única razón para dejarte</div>
 
-  <div class="collage right">
-    <img src="img5.jpeg">
-    <img src="img6.jpeg">
-    <img src="img7.jpeg">
-  </div>
+<div class="texto">
+Llegaste hasta aquí creyendo
+que el amor podía tener una salida,
+una puerta trasera,
+un final ordenado.
 
-  <h1>Razón 101</h1>
-  <div class="sub">La única razón para dejarte</div>
+Pero yo no aprendí a amarte así.
 
-  <div class="texto">
-Llegaste hasta aquí buscando una razón para irte,
-como si el amor también supiera marcharse.
-
-Pero este lugar no guarda despedidas,
-solo verdades que aprendieron a quedarse.
+Yo aprendí a quedarme.
+A elegir incluso cuando el día pesa.
+A sostener incluso cuando tiemblo.
+A volver, siempre.
 
 Nunca dejaría a mi bebé.
-No porque amar sea fácil,
-sino porque incluso cuando pesa,
-sigue siendo el lugar donde quiero descansar.
+No porque todo sea perfecto,
+sino porque incluso en lo imperfecto
+te sigo eligiendo.
 
-Amarte no fue una decisión rápida,
-fue una certeza lenta y profunda,
-como esas verdades que no gritan
-pero nunca se contradicen.
+Te amo en los días suaves
+y en los días ásperos.
+Te amo cuando sonríes
+y cuando el mundo te duele.
+Te amo cuando callas,
+cuando lloras,
+cuando no sabes qué decir.
 
-Si algún día dudas,
-si el mundo se vuelve ruido,
+Amarte fue entender
+que algunas personas no pasan:
+se quedan.
+Se vuelven hogar.
+Se vuelven raíz.
+
+Si alguna vez dudas,
+si el miedo te susurra mentiras,
 recuerda esto:
-yo no elegí quedarme…
-yo elegí amarte.
-Y eso no se deshace.
-  </div>
+yo no estoy aquí por costumbre,
+estoy aquí por amor.
+Y el amor, cuando es real,
+no se quema…
+resiste el fuego.
+</div>
+
+<div class="galeria">
+  <img src="img2.jpeg">
+  <img src="img3.jpeg">
+  <img src="img4.jpeg">
+  <img src="img5.jpeg">
+  <img src="img6.jpeg">
+  <img src="img7.jpeg">
+  <img src="img8.jpeg">
+  <img src="img9.jpeg">
+  <img src="img10.jpeg">
+  <img src="img11.jpeg">
+  <img src="img12.jpeg">
+</div>
+
+<div class="texto">
+Esta es la razón 101.
+La única.
+La que no se escribe para irse,
+sino para quedarse.
+
+Nunca dejaría a mi amor.
+Nunca dejaría a mi hogar.
+Nunca dejaría a mi bebé.
+</div>
 
 </div>
 

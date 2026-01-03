@@ -5,101 +5,83 @@
 <title>Razón 101 🔥</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,500&display=swap');
-
 body{
   margin:0;
-  background:
-    linear-gradient(rgba(70,40,15,0.8), rgba(35,20,8,0.9)),
-    url("https://www.transparenttextures.com/patterns/wood-pattern.png");
-  font-family:'Cormorant Garamond', serif;
+  background:#2b1b12;
+  font-family: "Georgia", serif;
 }
 
-/* CARTA */
 .carta{
-  max-width:880px;
-  margin:90px auto;
-  padding:100px 90px;
+  max-width:900px;
+  margin:60px auto;
+  padding:80px 70px;
   background:
-    linear-gradient(rgba(255,242,220,0.96), rgba(245,220,190,0.96)),
-    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-  color:#4b2a14;
-  position:relative;
+    radial-gradient(circle at top left, rgba(90,40,20,.4), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(90,40,20,.4), transparent 40%),
+    linear-gradient(#f5deb3,#e6caa2);
+  color:#4b2e1a;
   box-shadow:
-    inset 0 0 140px rgba(90,40,10,0.65),
-    0 50px 100px rgba(0,0,0,0.7);
-  clip-path: polygon(
-    3% 1%, 97% 3%, 100% 10%, 98% 92%,
-    94% 100%, 6% 97%, 1% 90%, 2% 6%
-  );
+    0 0 60px rgba(0,0,0,.8),
+    inset 0 0 120px rgba(120,60,20,.4);
+  border-radius:8px;
+  position:relative;
+  filter: sepia(20%);
 }
 
-/* EFECTO QUEMADO */
+/* Bordes quemados */
 .carta::before{
   content:"";
   position:absolute;
-  inset:0;
+  inset:-25px;
   background:
-    radial-gradient(circle at top left, rgba(160,90,30,0.7), transparent 45%),
-    radial-gradient(circle at bottom right, rgba(160,90,30,0.7), transparent 45%),
-    radial-gradient(circle at center, rgba(90,40,10,0.3), transparent 60%);
-  animation:fuego 6s infinite alternate;
-  pointer-events:none;
-}
-
-@keyframes fuego{
-  0%{opacity:0.5}
-  100%{opacity:0.85}
+    radial-gradient(circle at 10% 10%, #000 0%, transparent 35%),
+    radial-gradient(circle at 90% 15%, #000 0%, transparent 40%),
+    radial-gradient(circle at 20% 90%, #000 0%, transparent 35%),
+    radial-gradient(circle at 85% 85%, #000 0%, transparent 45%);
+  filter: blur(25px);
+  z-index:-1;
 }
 
 h1{
   text-align:center;
-  font-size:3.6em;
+  font-size:3.2em;
   margin-bottom:10px;
 }
 
 .sub{
   text-align:center;
   font-style:italic;
-  margin-bottom:70px;
+  margin-bottom:50px;
 }
 
-.texto{
-  font-size:1.25em;
-  line-height:2.1;
-  white-space:pre-line;
+p{
+  font-size:1.15em;
+  line-height:1.9;
+  margin-bottom:24px;
 }
 
-/* GALERIA */
-.galeria{
+/* Collage */
+.collage{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  margin:70px 0;
+  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+  gap:14px;
+  margin:50px 0;
 }
 
-.galeria img{
+.collage img{
   width:100%;
-  border-radius:8px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.45);
-  transform:rotate(-1deg);
+  border:4px solid #d1b089;
+  box-shadow:0 5px 20px rgba(0,0,0,.5);
+  transform:rotate(var(--r));
 }
 
-.galeria img:nth-child(even){
-  transform:rotate(1deg);
-}
+.collage img:nth-child(odd){--r:-3deg}
+.collage img:nth-child(even){--r:3deg}
 
-/* FIRMA */
 .firma{
-  margin-top:80px;
   text-align:right;
+  margin-top:60px;
   font-style:italic;
-  font-size:1.2em;
-}
-
-@media(max-width:900px){
-  .galeria{grid-template-columns:repeat(2,1fr);}
-  .carta{padding:60px 35px;}
 }
 </style>
 </head>
@@ -111,72 +93,70 @@ h1{
 <h1>Razón 101</h1>
 <div class="sub">La única razón para dejarte</div>
 
-<div class="texto">
-Llegaste hasta aquí
-buscando una razón para irte,
-como si el amor también supiera rendirse.
+<p>
+Llegaste hasta aquí buscando una salida,  
+como si el amor tuviera puertas de emergencia,  
+como si yo supiera irme de donde aprendí a quedarme.
+</p>
 
-Pero yo no aprendí a amarte así.
+<p>
+Pero yo no aprendí a amarte para huir.  
+Aprendí a quedarme cuando el día pesa,  
+cuando el miedo grita,  
+cuando la distancia quema más que el fuego.
+</p>
 
-Yo aprendí a quedarme
-cuando el día pesa,
-cuando el miedo habla,
-cuando la distancia duele.
+<p>
+Aprendí a amarte cuando no hay palabras bonitas,  
+cuando solo queda la verdad desnuda  
+y el corazón cansado,  
+pero todavía fiel.
+</p>
 
-Nunca dejaría a mi bebé.
-No porque todo sea fácil,
-sino porque incluso en lo difícil
-sigues siendo hogar.
+<p>
+Si algún día buscas una razón para irte,  
+que sea porque el mundo se apagó,  
+porque el tiempo dejó de existir,  
+porque el amor decidió rendirse.
+</p>
 
-Te amo cuando ríes
-y cuando te rompes un poco.
-Te amo cuando callas
-y cuando no sabes cómo pedir ayuda.
-Te amo cuando el mundo te pesa
-y cuando te sientes invencible.
+<p>
+Pero no será hoy.  
+No será conmigo.  
+No será contigo.
+</p>
 
-Amarte fue entender
-que hay personas que no se eligen una vez,
-se eligen todos los días.
+<p>
+Porque yo no sé amar a medias,  
+no sé huir,  
+no sé olvidarte,  
+no sé vivir donde tú no estés.
+</p>
 
-Si alguna vez dudas,
-si el miedo intenta convencerte,
-recuerda esto:
-yo no estoy aquí por costumbre,
-estoy aquí por decisión.
-Y elijo quedarme.
-Siempre.
-</div>
+<p>
+Nunca dejaría a mi bebé.  
+Nunca.  
+Ni en esta vida  
+ni en las que vengan después.
+</p>
 
-<div class="galeria">
-<img src="img2.jpeg">
-<img src="img3.jpeg">
-<img src="img4.jpeg">
-<img src="img5.jpeg">
-<img src="img6.jpeg">
-<img src="img7.jpeg">
-<img src="img8.jpeg">
-<img src="img9.jpeg">
-<img src="img10.jpeg">
-<img src="img11.jpeg">
-<img src="img12.jpeg">
-</div>
-
-<div class="texto">
-Esta es la razón 101.
-La única.
-La que no se escribe para irse,
-sino para quedarse.
-
-Nunca dejaría a mi amor.
-Nunca dejaría a mi hogar.
-Nunca dejaría a mi bebé.
+<div class="collage">
+  <img src="img1.jpeg">
+  <img src="img2.jpeg">
+  <img src="img3.jpeg">
+  <img src="img4.jpeg">
+  <img src="img5.jpeg">
+  <img src="img6.jpeg">
+  <img src="img7.jpeg">
+  <img src="img8.jpeg">
+  <img src="img9.jpeg">
+  <img src="img10.jpeg">
+  <img src="img11.jpeg">
 </div>
 
 <div class="firma">
-Con amor eterno,<br>
-Gabriel<br>
-Enero, para siempre
+— Para ti, mi amor.  
+<br>Para siempre.
 </div>
 
 </div>

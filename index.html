@@ -1,165 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Razón 101 🔥</title>
+  <meta charset="UTF-8">
+  <title>La razón por la que nunca te dejaría</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #7a4a2e, #3b1f12);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cormorant Garamond', serif;
+    }
 
-<style>
-body{
-  margin:0;
-  background:#2b1b12;
-  font-family: "Georgia", serif;
-}
+    .burn-frame {
+      position: relative;
+      max-width: 900px;
+      margin: 40px;
+      padding: 60px 70px;
+      background: url("img/papirorealista.png") repeat;
+      background-size: cover;
+      box-shadow: 0 0 80px rgba(0,0,0,0.7);
+      filter: contrast(1.05) saturate(1.2);
+    }
 
-.carta{
-  max-width:900px;
-  margin:60px auto;
-  padding:80px 70px;
-  background:
-    radial-gradient(circle at top left, rgba(90,40,20,.4), transparent 40%),
-    radial-gradient(circle at bottom right, rgba(90,40,20,.4), transparent 40%),
-    linear-gradient(#f5deb3,#e6caa2);
-  color:#4b2e1a;
-  box-shadow:
-    0 0 60px rgba(0,0,0,.8),
-    inset 0 0 120px rgba(120,60,20,.4);
-  border-radius:8px;
-  position:relative;
-  filter: sepia(20%);
-}
+    .burn-frame::after {
+      content: "";
+      position: absolute;
+      inset: -25px;
+      background: url("img/fuegorealista.png") no-repeat center;
+      background-size: cover;
+      pointer-events: none;
+      opacity: 0.95;
+    }
 
-/* Bordes quemados */
-.carta::before{
-  content:"";
-  position:absolute;
-  inset:-25px;
-  background:
-    radial-gradient(circle at 10% 10%, #000 0%, transparent 35%),
-    radial-gradient(circle at 90% 15%, #000 0%, transparent 40%),
-    radial-gradient(circle at 20% 90%, #000 0%, transparent 35%),
-    radial-gradient(circle at 85% 85%, #000 0%, transparent 45%);
-  filter: blur(25px);
-  z-index:-1;
-}
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #5a2f1a;
+      font-size: 2.8em;
+      margin-bottom: 40px;
+    }
 
-h1{
-  text-align:center;
-  font-size:3.2em;
-  margin-bottom:10px;
-}
+    p {
+      color: #3b1f12;
+      font-size: 1.35em;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      text-align: justify;
+    }
 
-.sub{
-  text-align:center;
-  font-style:italic;
-  margin-bottom:50px;
-}
+    .poem {
+      margin-top: 50px;
+      font-style: italic;
+      font-size: 1.45em;
+      color: #4a2415;
+    }
 
-p{
-  font-size:1.15em;
-  line-height:1.9;
-  margin-bottom:24px;
-}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 14px;
+      margin-top: 50px;
+    }
 
-/* Collage */
-.collage{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
-  gap:14px;
-  margin:50px 0;
-}
-
-.collage img{
-  width:100%;
-  border:4px solid #d1b089;
-  box-shadow:0 5px 20px rgba(0,0,0,.5);
-  transform:rotate(var(--r));
-}
-
-.collage img:nth-child(odd){--r:-3deg}
-.collage img:nth-child(even){--r:3deg}
-
-.firma{
-  text-align:right;
-  margin-top:60px;
-  font-style:italic;
-}
-</style>
+    .gallery img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      filter: sepia(0.25) contrast(1.05);
+    }
+  </style>
 </head>
-
 <body>
+  <div class="burn-frame">
+    <h1>La razón por la que nunca te dejaría</h1>
 
-<div class="carta">
+    <p>Podría escribir cien razones para amarte, pero aún así se quedarían cortas. Porque amarte no es una lista, es una certeza. Es despertar y saber que existes, es respirar con calma porque en algún lugar del mundo estás tú.</p>
 
-<h1>Razón 101</h1>
-<div class="sub">La única razón para dejarte</div>
+    <p>Amo la forma en que llegaste a mi vida sin hacer ruido, y aun así lo cambiaste todo. Amo tu manera de sentir, incluso cuando dudas, incluso cuando te duele. Amo tu fuerza suave, tu ternura valiente, tu corazón que ama sin condiciones.</p>
 
-<p>
-Llegaste hasta aquí buscando una salida,  
-como si el amor tuviera puertas de emergencia,  
-como si yo supiera irme de donde aprendí a quedarme.
-</p>
+    <p>Amo tus silencios, porque en ellos también me hablas. Amo tus palabras, porque cuando vienen de ti se vuelven refugio. Amo tu risa, porque me recuerda que la felicidad existe y tiene tu nombre.</p>
 
-<p>
-Pero yo no aprendí a amarte para huir.  
-Aprendí a quedarme cuando el día pesa,  
-cuando el miedo grita,  
-cuando la distancia quema más que el fuego.
-</p>
+    <div class="poem">
+      <p>Si algún día me preguntas por qué sigo aquí,<br>
+      te diré que es porque tu nombre se me quedó tatuado en el alma.<br>
+      Porque no aprendí a amarte de memoria,<br>
+      te aprendí con el corazón abierto,<br>
+      con los miedos en la mano<br>
+      y la esperanza temblando.</p>
 
-<p>
-Aprendí a amarte cuando no hay palabras bonitas,  
-cuando solo queda la verdad desnuda  
-y el corazón cansado,  
-pero todavía fiel.
-</p>
+      <p>Te amo en los días claros<br>
+      y en los días que pesan.<br>
+      Te amo cuando sonríes<br>
+      y cuando te rompes un poco.<br>
+      Te amo cuando eres luz,<br>
+      y también cuando eres tormenta,<br>
+      porque incluso en tus sombras<br>
+      sigues siendo hogar.</p>
 
-<p>
-Si algún día buscas una razón para irte,  
-que sea porque el mundo se apagó,  
-porque el tiempo dejó de existir,  
-porque el amor decidió rendirse.
-</p>
+      <p>No te amo porque seas perfecta,<br>
+      te amo porque eres real.<br>
+      Porque tu amor no promete cuentos,<br>
+      promete quedarse.<br>
+      Y quedarse es el acto más valiente que existe.</p>
 
-<p>
-Pero no será hoy.  
-No será conmigo.  
-No será contigo.
-</p>
+      <p>Si el mundo se incendiara,<br>
+      yo elegiría arder contigo.<br>
+      Si todo se apagara,<br>
+      yo te buscaría a oscuras.<br>
+      Porque no concibo un futuro
+      donde no estés tú,<br>
+      porque mi lugar,<br>
+      sin duda alguna,<br>
+      es a tu lado.</p>
 
-<p>
-Porque yo no sé amar a medias,  
-no sé huir,  
-no sé olvidarte,  
-no sé vivir donde tú no estés.
-</p>
+      <p>Y si alguna vez encuentras una razón para dejarme,<br>
+      recuerda esta verdad sencilla y eterna:<br>
+      yo nunca encontraré una razón para dejarte a ti.</p>
+    </div>
 
-<p>
-Nunca dejaría a mi bebé.  
-Nunca.  
-Ni en esta vida  
-ni en las que vengan después.
-</p>
-
-<div class="collage">
-  <img src="img1.jpeg">
-  <img src="img2.jpeg">
-  <img src="img3.jpeg">
-  <img src="img4.jpeg">
-  <img src="img5.jpeg">
-  <img src="img6.jpeg">
-  <img src="img7.jpeg">
-  <img src="img8.jpeg">
-  <img src="img9.jpeg">
-  <img src="img10.jpeg">
-  <img src="img11.jpeg">
-</div>
-
-<div class="firma">
-— Para ti, mi amor.  
-<br>Para siempre.
-</div>
-
-</div>
-
+    <div class="gallery">
+      <img src="img/img2.jpeg">
+      <img src="img/img3.jpeg">
+      <img src="img/img4.jpeg">
+      <img src="img/img5.jpeg">
+      <img src="img/img6.jpeg">
+      <img src="img/img7.jpeg">
+      <img src="img/img8.jpeg">
+      <img src="img/img9.jpeg">
+    </div>
+  </div>
 </body>
 </html>

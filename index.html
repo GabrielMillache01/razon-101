@@ -2,205 +2,128 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Razón 101 💖</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Cormorant+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Libre+Baskerville&display=swap');
 
-body {
-  margin: 0;
-  font-family: 'Cormorant Garamond', serif;
-  color: #3a1d24;
+body{
+  margin:0;
   background:
-    linear-gradient(180deg, rgba(255,220,228,0.9), rgba(255,180,195,0.9)),
-    url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    linear-gradient(rgba(255,240,235,0.9), rgba(255,220,220,0.9)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  font-family:'Libre Baskerville', serif;
+  color:#4a2c2a;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 50px 20px;
+.contenedor{
+  max-width:900px;
+  margin:80px auto;
+  background:#fff7f3;
+  border-radius:25px;
+  padding:70px 90px;
+  box-shadow:0 40px 80px rgba(90,30,40,0.35);
+  position:relative;
 }
 
-.card {
-  background: rgba(255,248,250,0.95);
-  border-radius: 28px;
-  padding: 50px;
-  margin-bottom: 70px;
-  box-shadow: 0 30px 70px rgba(0,0,0,0.18);
-  position: relative;
+h1{
+  text-align:center;
+  font-family:'Playfair Display', serif;
+  font-size:3.2em;
+  margin-bottom:5px;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  text-align: center;
-  margin-bottom: 10px;
+.sub{
+  text-align:center;
+  font-style:italic;
+  margin-bottom:50px;
+  color:#7a3e48;
 }
 
-h2 {
-  text-align: center;
-  font-weight: normal;
-  font-style: italic;
-  color: #6b2f3a;
-  margin-top: 0;
+.texto{
+  font-size:1.1em;
+  line-height:1.9;
+  white-space:pre-line;
 }
 
-p {
-  font-size: 1.15rem;
-  line-height: 2;
-  margin: 22px 0;
+/* COLLAGE */
+.collage{
+  position:absolute;
+  top:120px;
+  left:-80px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
 }
 
-.poema {
-  font-style: italic;
-  font-size: 1.2rem;
+.collage.right{
+  left:auto;
+  right:-80px;
 }
 
-.heart {
-  text-align: center;
-  font-size: 2.1rem;
-  margin: 24px 0;
+.collage img{
+  width:130px;
+  border-radius:14px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.25);
+  transform:rotate(-4deg);
 }
 
-.collage {
-  position: absolute;
-  top: 40px;
-  width: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.collage img:nth-child(even){
+  transform:rotate(4deg);
 }
 
-.left { left: -70px; }
-.right { right: -70px; }
-
-.collage img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-footer {
-  text-align: center;
-  color: #fff;
-  opacity: 0.85;
-  font-size: 0.95rem;
+@media(max-width:900px){
+  .collage{display:none;}
+  .contenedor{padding:40px;}
 }
 </style>
 </head>
 
 <body>
-<div class="container">
 
-  <div class="card">
-    <h1>Razón 101</h1>
-    <h2>La única razón para dejarte</h2>
-    <div class="heart">💌</div>
-    <p class="poema">
-      Llegaste hasta aquí buscando una razón para irme,<br>
-      como si el amor también supiera marcharse.<br>
-      Pero este lugar no guarda despedidas,<br>
-      solo verdades que aprendieron a quedarse.
-    </p>
+<div class="contenedor">
+
+  <div class="collage">
+    <img src="img2.jpeg">
+    <img src="img3.jpeg">
+    <img src="img4.jpeg">
   </div>
 
-  <div class="card">
-    <div class="collage left">
-      <img src="img2.jpeg">
-      <img src="img3.jpeg">
-      <img src="img4.jpeg">
-    </div>
-
-    <p class="poema">
-      Nunca dejaría a mi bebé.<br><br>
-      No porque el amor sea fácil,<br>
-      sino porque incluso cuando pesa,<br>
-      sigue siendo el lugar donde quiero descansar.
-    </p>
-
-    <p>
-      Amarte no fue una decisión rápida,<br>
-      fue una certeza lenta y profunda,<br>
-      como esas verdades que no gritan<br>
-      pero nunca se contradicen.
-    </p>
-
-    <div class="collage right">
-      <img src="img5.jpeg">
-      <img src="img6.jpeg">
-    </div>
+  <div class="collage right">
+    <img src="img5.jpeg">
+    <img src="img6.jpeg">
+    <img src="img7.jpeg">
   </div>
 
-  <div class="card">
-    <p class="poema">
-      Te amo en lo cotidiano,<br>
-      en los días comunes,<br>
-      en las conversaciones simples,<br>
-      en los silencios que no incomodan.
-    </p>
+  <h1>Razón 101</h1>
+  <div class="sub">La única razón para dejarte</div>
 
-    <p>
-      Te amo cuando dudas de ti,<br>
-      cuando te cansas,<br>
-      cuando no sabes si puedes más.<br>
-      Ahí también te elijo.
-    </p>
+  <div class="texto">
+Llegaste hasta aquí buscando una razón para irte,
+como si el amor también supiera marcharse.
+
+Pero este lugar no guarda despedidas,
+solo verdades que aprendieron a quedarse.
+
+Nunca dejaría a mi bebé.
+No porque amar sea fácil,
+sino porque incluso cuando pesa,
+sigue siendo el lugar donde quiero descansar.
+
+Amarte no fue una decisión rápida,
+fue una certeza lenta y profunda,
+como esas verdades que no gritan
+pero nunca se contradicen.
+
+Si algún día dudas,
+si el mundo se vuelve ruido,
+recuerda esto:
+yo no elegí quedarme…
+yo elegí amarte.
+Y eso no se deshace.
   </div>
-
-  <div class="card">
-    <div class="collage left">
-      <img src="img7.jpeg">
-      <img src="img8.jpeg">
-    </div>
-
-    <p class="poema">
-      No hay distancia que me enseñe a soltar tu mano.<br>
-      No hay noche tan larga que no quiera atravesar contigo.<br>
-      No hay miedo que valga más que tu paz.
-    </p>
-
-    <div class="collage right">
-      <img src="img9.jpeg">
-      <img src="img10.jpeg">
-    </div>
-  </div>
-
-  <div class="card">
-    <p class="poema">
-      Si algún día dudas,<br>
-      vuelve a este lugar.<br>
-      Aquí está escrita la verdad
-      que no siempre se dice en voz alta.
-    </p>
-
-    <p>
-      Tú no eres una razón para irme,<br>
-      eres la razón por la que me quedo<br>
-      cuando amar exige valentía,<br>
-      cuando quedarse es un acto de amor.
-    </p>
-
-    <div class="heart">♾️</div>
-
-    <p class="poema">
-      Jamás dejaría a mi bebé.<br>
-      No hoy.<br>
-      No mañana.<br>
-      No cuando todo sea fácil,<br>
-      ni cuando todo duela.<br><br>
-      Te elegiría incluso sin promesas,<br>
-      incluso sin testigos,<br>
-      incluso si el mundo se apaga<br>
-      y solo quedamos tú y yo.
-    </p>
-  </div>
-
-  <footer>
-    Hecho con amor eterno 💕
-  </footer>
 
 </div>
+
 </body>
 </html>

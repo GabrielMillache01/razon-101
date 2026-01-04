@@ -1,179 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Razón 101</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
-  <style>
-    body{
-      margin:0;
-      min-height:100vh;
-      background: linear-gradient(135deg,#6f4a2d,#3a2416);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
+<meta charset="UTF-8">
+<title>Razón 101</title>
 
-    .papiro{
-      position:relative;
-      width:95%;
-      max-width:1100px;
-      padding:260px 260px;
-      background:url("papirorealista.png") center/cover no-repeat;
-      box-shadow:0 0 90px rgba(0,0,0,.75);
-    }
+<style>
+body{
+  margin:0;
+  padding:0;
+  background:#4b2e1a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
 
-    /* fuego en las esquinas */
-    .fuego{
-      position:absolute;
-      width:120px;
-      height:120px;
-      background:url("fuegorealista.png") center/contain no-repeat;
-      pointer-events:none;
-    }
-    .f1{top:40px;left:-30px}
-    .f2{top:40px;right:-30px}
-    .f3{bottom:40px;left:-30px}
-    .f4{bottom:40px;right:-30px}
+/* CONTENEDOR PAPIRO */
+.papiro{
+  position:relative;
+  width:90%;
+  max-width:1000px;
+  background-image:url("papirorealista.png");
+  background-size:cover;
+  background-position:center;
+  padding:180px 120px; /* PROTEGE EL ENROLLADO */
+  box-sizing:border-box;
+}
 
-    h1{
-      text-align:center;
-      font-family:'Playfair Display',serif;
-      font-size:2.1em;
-      color:#2b1a0f;
-      letter-spacing:2px;
-      margin:0 0 25px 0;
-      padding-top:20px;
-    }
+/* ZONA PLANA SEGURA */
+.zona-plana{
+  max-width:520px;
+  margin:auto;
+  text-align:center;
+  color:#2a1a10;
+  font-family:"Georgia", serif;
+  line-height:1.15;
+}
 
-    h2{
-      text-align:center;
-      font-family:'Cormorant Garamond',serif;
-      font-size:1.2em;
-      color:#3b2417;
-      margin-bottom:25px;
-      font-style:italic;
-    }
+/* TITULO */
+.zona-plana h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
 
-    .texto{
-      font-family:'Cormorant Garamond',serif;
-      font-size:0.95em;
-      line-height:1.15;
-      color:#1f120a;
-      text-align:justify;
-    }
+/* SUBTITULO */
+.zona-plana h2{
+  font-size:18px;
+  font-weight:normal;
+  margin-bottom:25px;
+  font-style:italic;
+}
 
-    .inicio-poema{
-      font-style:italic;
-      font-size:1.65em;
-      margin-bottom:45px;
-    }
+/* TEXTO */
+.zona-plana p{
+  font-size:14.5px;
+  margin:6px 0;
+}
 
-    .frase{
-      margin:45px 0;
-      font-size:1.7em;
-      text-align:center;
-      font-style:italic;
-      color:#2a180e;
-    }
+/* FIRMA */
+.firma{
+  margin-top:18px;
+  font-size:14px;
+  font-style:italic;
+}
 
-    .collage{
-      margin-top:80px;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-      gap:26px;
-    }
+/* IMÁGENES COLLAGE SOBRE EL PAPIRO */
+.collage img{
+  position:absolute;
+  width:110px;
+  border:6px solid #c7a060;
+  box-shadow:0 8px 20px rgba(0,0,0,0.45);
+}
 
-    .collage img{
-      width:100%;
-      background:#efe1c7;
-      padding:12px;
-      border:4px solid #7a4a2e;
-      box-shadow:0 10px 25px rgba(0,0,0,.45);
-    }
+/* POSICIONES (AJUSTADAS A ZONA PLANA) */
+.img1{top:200px; left:60px; transform:rotate(-6deg);}
+.img2{top:380px; right:60px; transform:rotate(6deg);}
+.img3{top:560px; left:80px; transform:rotate(4deg);}
+.img4{bottom:420px; right:80px; transform:rotate(-5deg);}
+.img5{bottom:260px; left:100px; transform:rotate(6deg);}
+.img6{bottom:140px; right:100px; transform:rotate(-4deg);}
 
-    .firma{
-      margin-top:35px;
-      padding-bottom:40px;
-      text-align:right;
-      font-size:1.35em;
-      color:#2b1a0f;
-      font-style:italic;
-    }
-    .collage-externo{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-      gap:22px;
-      max-width:1100px;
-      margin:60px auto;
-    }
+/* FUEGO EN ESQUINAS DEL PAPIRO */
+.fuego{
+  position:absolute;
+  width:90px;
+}
 
-    .collage-externo img{
-      width:100%;
-      background:#efe1c7;
-      padding:12px;
-      border:4px solid #7a4a2e;
-      box-shadow:0 10px 25px rgba(0,0,0,.45);
-      transform:rotate(-1deg);
-    }
-
-    .collage-externo img:nth-child(even){
-      transform:rotate(1.5deg);
-    }
-
+.f1{top:40px; left:40px;}
+.f2{top:40px; right:40px;}
+.f3{bottom:40px; left:40px;}
+.f4{bottom:40px; right:40px;}
 </style>
 </head>
-<body>
-  <div class="papiro">
-    <div class="fuego f1"></div>
-    <div class="fuego f2"></div>
-    <div class="fuego f3"></div>
-    <div class="fuego f4"></div>
 
+<body>
+
+<div class="papiro">
+
+  <!-- FUEGO -->
+  <img src="fuegorealista.png" class="fuego f1">
+  <img src="fuegorealista.png" class="fuego f2">
+  <img src="fuegorealista.png" class="fuego f3">
+  <img src="fuegorealista.png" class="fuego f4">
+
+  <!-- COLLAGE -->
+  <div class="collage">
+    <img src="img2.jpeg" class="img1">
+    <img src="img3.jpeg" class="img2">
+    <img src="img4.jpeg" class="img3">
+    <img src="img5.jpeg" class="img4">
+    <img src="img6.jpeg" class="img5">
+    <img src="img7.jpeg" class="img6">
+  </div>
+
+  <!-- TEXTO -->
+  <div class="zona-plana">
     <h1>Razón 101</h1>
     <h2>¿En serio crees que hay alguna razón para dejarte?</h2>
 
-    <div class="texto">
-      <div class="inicio-poema">
-        <p>No quiero alejarme porque en ti encontré mi lugar. Porque cuando pienso en el amor, tu nombre aparece primero, suave, inevitable, eterno. No quiero alejarme porque mi corazón no sabe caminar si no es hacia ti.</p>
+    <p>No sé en qué momento exacto dejé de buscar excusas</p>
+    <p>y empecé a encontrar certezas,</p>
+    <p>pero sé que todas llevan tu nombre.</p>
 
-        <p>Te amo de una forma que a veces no encuentra palabras, porque lo que siento es más grande que cualquier frase. Te amo con silencios, con pensamientos, con promesas que no se dicen pero se cumplen.</p>
-      </div>
+    <p>No quiero alejarme porque mi lugar</p>
+    <p>es donde sonríes,</p>
+    <p>donde tu voz se vuelve casa</p>
+    <p>y tu silencio también me cuida.</p>
 
-      <p>Te amo, mi princesa, porque tu forma de amar es refugio. Te amo, mi niña, porque en tu ternura descansa mi alma. Te amo, mi vida, porque contigo entendí que amar no es necesitar, es elegir.</p>
+    <p>Te amo sin horarios,</p>
+    <p>sin condiciones,</p>
+    <p>sin mapas para huir.</p>
 
-      <p>Te amo, mi wawita hermosa, mi bombón de chocolate blanco, porque incluso en tus días grises sigues siendo luz. Te amo, mi mujer, porque tu corazón es fuerte y dulce al mismo tiempo, y eso es un milagro.</p>
+    <p>Te amo porque eres mi princesa,</p>
+    <p>mi niña,</p>
+    <p>mi vida completa en una sola mirada.</p>
 
-      <div class="frase">No existe un mundo donde no te elija.</div>
+    <p>Porque cuando dices mi nombre</p>
+    <p>el mundo se ordena</p>
+    <p>y cuando me llamas amor</p>
+    <p>todo miedo se vuelve pequeño.</p>
 
-      <p>Si algún día me faltan palabras, que no te falte mi presencia. Si alguna vez dudo, que no dudes de mi amor. Porque lo que siento por ti no se desgasta, no se quiebra, no se acaba.</p>
+    <p>Eres mi wawita,</p>
+    <p>mi bombón de chocolate blanco,</p>
+    <p>mi mujer fuerte y dulce,</p>
+    <p>mi refugio cuando el día pesa.</p>
 
-      <p>Te amo en lo simple y en lo eterno. Te amo en lo cotidiano y en lo imposible. Te amo porque sí, porque siempre, porque eres tú.</p>
+    <p>No encuentro palabras suficientes</p>
+    <p>porque el amor que siento no cabe</p>
+    <p>en un idioma,</p>
+    <p>ni en un poema,</p>
+    <p>ni en mil cartas.</p>
 
-      <div class="frase">Eres mi razón para quedarme cuando todo arde.</div>
-    </div>
+    <p>Te amo en lo simple</p>
+    <p>y en lo eterno,</p>
+    <p>en lo que fuimos</p>
+    <p>y en todo lo que seremos.</p>
 
-    
+    <p>Si me preguntas por qué me quedo,</p>
+    <p>la respuesta es fácil:</p>
+    <p>porque eres tú.</p>
 
     <div class="firma">
-      Te ama,<br>
-      tu hombre, tu niño,<br>
-      <strong>Gabriel</strong><br><br>
-      Para mi princesa hermosa,<br>
-      mi niña, mi bebé,<br>
-      <strong>Mi Rocío</strong>
+      <p>Te ama,</p>
+      <p>tu hombre, tu niño,</p>
+      <p>Gabriel</p>
+      <br>
+      <p>Para mi princesa hermosa,</p>
+      <p>mi niña, mi bebé,</p>
+      <p>mi Rocío.</p>
     </div>
-    </div>
-
-  <div class="collage-externo">
-    <img src="img2.jpeg">
-    <img src="img3.jpeg">
-    <img src="img4.jpeg">
-    <img src="img5.jpeg">
-    <img src="img6.jpeg">
-    <img src="img7.jpeg">
-    <img src="img8.jpeg">
-    <img src="img9.jpeg">
   </div>
+
+</div>
+
 </body>
 </html>

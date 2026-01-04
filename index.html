@@ -23,41 +23,39 @@ body{
   background-image:url("papirorealista.png");
   background-size:cover;
   background-position:center;
-  padding:200px 140px; /* MÁS PROTECCIÓN AL ENROLLADO */
+  padding:200px 150px;
   box-sizing:border-box;
 }
 
-/* ZONA PLANA SEGURA */
+/* ZONA PLANA */
 .zona-plana{
-  max-width:560px; /* un poco más ancho */
+  max-width:560px;
   margin:auto;
   text-align:center;
   color:#2a1a10;
   font-family:"Georgia", serif;
-  line-height:1.02; /* MUY COMPACTO */
-  letter-spacing:0.4px; /* ESTIRA EL TEXTO */
+  line-height:1.02;
+  letter-spacing:0.4px;
 }
 
-/* TITULO */
+/* TITULOS */
 .zona-plana h1{
   font-size:34px;
   margin:0 0 6px 0;
   letter-spacing:1.5px;
 }
 
-/* SUBTITULO */
 .zona-plana h2{
   font-size:17px;
   font-weight:normal;
   margin:0 0 18px 0;
   font-style:italic;
-  letter-spacing:0.8px;
 }
 
 /* TEXTO */
 .zona-plana p{
   font-size:14px;
-  margin:3px 0; /* ULTRA COMPACTO */
+  margin:3px 0;
 }
 
 /* FIRMA */
@@ -67,25 +65,25 @@ body{
   font-style:italic;
 }
 
-/* IMÁGENES COLLAGE SOBRE EL PAPIRO */
+/* COLLAGE */
 .collage img{
   position:absolute;
-  width:110px;
+  width:95px; /* MÁS PEQUEÑAS */
   border:6px solid #c7a060;
-  box-shadow:0 8px 20px rgba(0,0,0,0.45);
+  background:#efe1c7;
+  box-shadow:0 8px 18px rgba(0,0,0,0.45);
 }
 
-/* POSICIONES AJUSTADAS – SIN SUPERPOSICIÓN */
-.img1{top:200px; left:50px; transform:rotate(-6deg);}
-.img2{top:360px; right:50px; transform:rotate(6deg);}
-.img3{top:540px; left:70px; transform:rotate(4deg);}
+/* POSICIONES — ESCALONADAS Y SIN CRUCES */
+.img1{ top:220px; left:40px; transform:rotate(-6deg); z-index:1; }
+.img2{ top:360px; left:70px; transform:rotate(4deg); z-index:2; }
+.img3{ top:520px; left:40px; transform:rotate(-4deg); z-index:1; }
 
-.img4{bottom:500px; right:70px; transform:rotate(-5deg);}
-.img5{bottom:320px; left:90px; transform:rotate(6deg);}
-.img6{bottom:140px; right:90px; transform:rotate(-4deg);}
+.img4{ top:220px; right:40px; transform:rotate(6deg); z-index:1; }
+.img5{ top:380px; right:70px; transform:rotate(-5deg); z-index:2; }
+.img6{ top:560px; right:40px; transform:rotate(5deg); z-index:1; }
 
-
-/* FUEGO EN ESQUINAS DEL PAPIRO */
+/* FUEGO */
 .fuego{
   position:absolute;
   width:90px;
@@ -108,7 +106,7 @@ body{
   <img src="fuegorealista.png" class="fuego f3">
   <img src="fuegorealista.png" class="fuego f4">
 
-  <!-- COLLAGE -->
+  <!-- COLLAGE SOBRE EL PAPIRO -->
   <div class="collage">
     <img src="img2.jpeg" class="img1">
     <img src="img3.jpeg" class="img2">
@@ -123,31 +121,29 @@ body{
     <h1>Razón 101</h1>
     <h2>¿En serio crees que hay alguna razón para dejarte?</h2>
 
-    <p>No sé en qué momento exacto dejé de buscar excusas</p>
+    <p>No sé en qué momento dejé de buscar excusas</p>
     <p>y empecé a encontrar certezas,</p>
-    <p>pero sé que todas llevan tu nombre.</p>
+    <p>todas con tu nombre.</p>
 
     <p>No quiero alejarme porque mi lugar</p>
-    <p>es donde sonríes,</p>
-    <p>donde tu voz se vuelve casa</p>
-    <p>y tu silencio también me cuida.</p>
+    <p>es donde sonríes</p>
+    <p>y tu voz se vuelve hogar.</p>
 
     <p>Te amo sin horarios,</p>
     <p>sin condiciones,</p>
-    <p>sin mapas para huir.</p>
+    <p>sin puertas de salida.</p>
 
     <p>Te amo porque eres mi princesa,</p>
     <p>mi niña,</p>
-    <p>mi vida completa en una sola mirada.</p>
+    <p>mi vida completa.</p>
 
     <p>Eres mi wawita,</p>
     <p>mi bombón de chocolate blanco,</p>
-    <p>mi mujer fuerte y dulce,</p>
-    <p>mi refugio cuando el día pesa.</p>
+    <p>mi mujer, mi refugio.</p>
 
     <p>No encuentro palabras suficientes</p>
-    <p>porque el amor que siento no cabe</p>
-    <p>en un idioma ni en un poema.</p>
+    <p>porque lo nuestro no cabe</p>
+    <p>en ningún idioma.</p>
 
     <p>Si me preguntas por qué me quedo,</p>
     <p>la respuesta es simple:</p>

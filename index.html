@@ -2,136 +2,142 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>La razón por la que nunca te dejaría</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <title>Razón 101</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      background: radial-gradient(circle at top, #7a4a2e, #3b1f12);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Cormorant Garamond', serif;
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(135deg,#6f4a2d,#3a2416);
+      display:flex;
+      justify-content:center;
+      align-items:center;
     }
 
-    .burn-frame {
-      position: relative;
-      max-width: 900px;
-      margin: 40px;
-      padding: 60px 70px;
-      background: url("img/papirorealista.png") repeat;
-      background-size: cover;
-      box-shadow: 0 0 80px rgba(0,0,0,0.7);
-      filter: contrast(1.05) saturate(1.2);
+    .papiro{
+      position:relative;
+      max-width:950px;
+      padding:80px 90px;
+      background:url("papirorealista.png") center/cover no-repeat;
+      box-shadow:0 0 80px rgba(0,0,0,.7);
     }
 
-    .burn-frame::after {
-      content: "";
-      position: absolute;
-      inset: -25px;
-      background: url("img/fuegorealista.png") no-repeat center;
-      background-size: cover;
-      pointer-events: none;
-      opacity: 0.95;
+    /* fuego en las esquinas */
+    .fuego{
+      position:absolute;
+      width:140px;
+      height:140px;
+      background:url("fuegorealista.png") center/contain no-repeat;
+      pointer-events:none;
+    }
+    .f1{top:-40px;left:-40px}
+    .f2{top:-40px;right:-40px}
+    .f3{bottom:-40px;left:-40px}
+    .f4{bottom:-40px;right:-40px}
+
+    h1{
+      text-align:center;
+      font-family:'Playfair Display',serif;
+      font-size:3.2em;
+      color:#fff;
+      letter-spacing:2px;
+      margin-bottom:10px;
+      text-shadow:0 0 15px rgba(0,0,0,.6);
     }
 
-    h1 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      color: #5a2f1a;
-      font-size: 2.8em;
-      margin-bottom: 40px;
+    h2{
+      text-align:center;
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.6em;
+      color:#f5e6d3;
+      margin-bottom:50px;
+      font-style:italic;
     }
 
-    p {
-      color: #3b1f12;
-      font-size: 1.35em;
-      line-height: 1.8;
-      margin-bottom: 24px;
-      text-align: justify;
+    .texto{
+      font-family:'Cormorant Garamond',serif;
+      font-size:1.45em;
+      line-height:1.9;
+      color:#ffffff;
+      text-shadow:0 0 6px rgba(0,0,0,.7);
     }
 
-    .poem {
-      margin-top: 50px;
-      font-style: italic;
-      font-size: 1.45em;
-      color: #4a2415;
+    .frase{
+      margin:35px 0;
+      font-size:1.55em;
+      text-align:center;
+      font-style:italic;
+      color:#fff4e6;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      gap: 14px;
-      margin-top: 50px;
+    .collage{
+      margin-top:60px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:20px;
     }
 
-    .gallery img {
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-      filter: sepia(0.25) contrast(1.05);
+    .collage img{
+      width:100%;
+      background:#e6d2b8;
+      padding:10px;
+      border:3px solid #7a4a2e;
+      box-shadow:0 8px 20px rgba(0,0,0,.5);
+    }
+
+    .firma{
+      margin-top:70px;
+      text-align:right;
+      font-size:1.4em;
+      color:#fff;
+      font-style:italic;
     }
   </style>
 </head>
 <body>
-  <div class="burn-frame">
-    <h1>La razón por la que nunca te dejaría</h1>
+  <div class="papiro">
+    <div class="fuego f1"></div>
+    <div class="fuego f2"></div>
+    <div class="fuego f3"></div>
+    <div class="fuego f4"></div>
 
-    <p>Podría escribir cien razones para amarte, pero aún así se quedarían cortas. Porque amarte no es una lista, es una certeza. Es despertar y saber que existes, es respirar con calma porque en algún lugar del mundo estás tú.</p>
+    <h1>Razón 101</h1>
+    <h2>La única razón que existe cuando todas las demás sobran</h2>
 
-    <p>Amo la forma en que llegaste a mi vida sin hacer ruido, y aun así lo cambiaste todo. Amo tu manera de sentir, incluso cuando dudas, incluso cuando te duele. Amo tu fuerza suave, tu ternura valiente, tu corazón que ama sin condiciones.</p>
+    <div class="texto">
+      <p>Podría pasar la vida entera escribiendo razones para amarte y aun así sentir que ninguna alcanza. Porque amarte no es una idea, es una forma de existir. Desde que llegaste, el mundo pesa distinto, el tiempo se vuelve más suave y el corazón aprende a quedarse.</p>
 
-    <p>Amo tus silencios, porque en ellos también me hablas. Amo tus palabras, porque cuando vienen de ti se vuelven refugio. Amo tu risa, porque me recuerda que la felicidad existe y tiene tu nombre.</p>
+      <p>Te amo cuando sonríes, pero también cuando dudas. Te amo cuando eres luz y cuando te escondes un poco del mundo. Te amo porque tu forma de amar no grita, abraza. Porque tu presencia calma tormentas que nadie más ve.</p>
 
-    <div class="poem">
-      <p>Si algún día me preguntas por qué sigo aquí,<br>
-      te diré que es porque tu nombre se me quedó tatuado en el alma.<br>
-      Porque no aprendí a amarte de memoria,<br>
-      te aprendí con el corazón abierto,<br>
-      con los miedos en la mano<br>
-      y la esperanza temblando.</p>
+      <div class="frase">Te amo sin condiciones, sin pausas y sin fecha de vencimiento.</div>
 
-      <p>Te amo en los días claros<br>
-      y en los días que pesan.<br>
-      Te amo cuando sonríes<br>
-      y cuando te rompes un poco.<br>
-      Te amo cuando eres luz,<br>
-      y también cuando eres tormenta,<br>
-      porque incluso en tus sombras<br>
-      sigues siendo hogar.</p>
+      <p>Te amo en los días largos, en las noches silenciosas, en la distancia que duele y en la promesa que sostiene. Te amo porque incluso lejos, sigues siendo hogar. Porque tu nombre es el lugar donde mi alma descansa.</p>
 
-      <p>No te amo porque seas perfecta,<br>
-      te amo porque eres real.<br>
-      Porque tu amor no promete cuentos,<br>
-      promete quedarse.<br>
-      Y quedarse es el acto más valiente que existe.</p>
+      <p>No te amo por lo que prometes, te amo por lo que eres. Por tu ternura valiente, por tu forma sincera de sentir, por tu corazón que ama con miedo pero igual se entrega.</p>
 
-      <p>Si el mundo se incendiara,<br>
-      yo elegiría arder contigo.<br>
-      Si todo se apagara,<br>
-      yo te buscaría a oscuras.<br>
-      Porque no concibo un futuro
-      donde no estés tú,<br>
-      porque mi lugar,<br>
-      sin duda alguna,<br>
-      es a tu lado.</p>
+      <div class="frase">Elegirte todos los días es el acto más bonito de mi vida.</div>
 
-      <p>Y si alguna vez encuentras una razón para dejarme,<br>
-      recuerda esta verdad sencilla y eterna:<br>
-      yo nunca encontraré una razón para dejarte a ti.</p>
+      <p>Si alguna vez dudas de cuánto te amo, recuerda esto: te amo con un amor que no se rinde, que no huye, que no se cansa. Te amo con un amor que se queda, incluso cuando todo arde.</p>
     </div>
 
-    <div class="gallery">
-      <img src="img/img2.jpeg">
-      <img src="img/img3.jpeg">
-      <img src="img/img4.jpeg">
-      <img src="img/img5.jpeg">
-      <img src="img/img6.jpeg">
-      <img src="img/img7.jpeg">
-      <img src="img/img8.jpeg">
-      <img src="img/img9.jpeg">
+    <div class="collage">
+      <img src="img2.jpeg">
+      <img src="img3.jpeg">
+      <img src="img4.jpeg">
+      <img src="img5.jpeg">
+      <img src="img6.jpeg">
+      <img src="img7.jpeg">
+      <img src="img8.jpeg">
+      <img src="img9.jpeg">
+    </div>
+
+    <div class="firma">
+      Te ama,<br>
+      tu hombre, tu niño,<br>
+      <strong>Gabriel</strong><br><br>
+      Para mi princesa hermosa,<br>
+      mi niña, mi bebé,<br>
+      <strong>Mi Rocío</strong>
     </div>
   </div>
 </body>
